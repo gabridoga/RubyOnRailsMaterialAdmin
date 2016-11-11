@@ -36,4 +36,8 @@ class AdminController < ApplicationController
   end
   def userlist
   end
+  def register
+  end
+  def lock
+  end
 end

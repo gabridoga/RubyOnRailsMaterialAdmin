@@ -1,0 +1,91 @@
+
+<!-- Dropdown Structure -->
+<ul id="dropdown1" class="dropdown-content active">
+  <li><a href="#!">one</a></li>
+  <li><a href="#!">two<span class="new badge">1</span></a></li>
+  <li class="divider"></li>
+  <li><a href="#!">three</a></li>
+</ul>
+
+<ul id="dropdown3" class="dropdown-content">
+  <li><a href="#!"><i class="small material-icons left">person</i>Profile</a></li>
+  <li><a href="#!"><i class="small material-icons left">settings</i>Setting</a></li>
+  <li><a href="#!"><i class="small material-icons left">help</i>Help</a></li>
+  <li><a href=<%= home_index_path %>><i class="small material-icons left">home</i>Home</a></li>
+  <li class="divider"></li>
+  <li><a href=<%= admin_lock_path %>><i class="material-icons left">lock_outline</i>Lock</a></li>
+  <li><a href=<%= admin_index_path %>><i class="material-icons left">exit_to_app</i>Logout</a></li>
+</ul>
+
+
+<ul id="dropdown2" class="dropdown-content">
+  <li><a href="#!">Gabri</a></li>
+  <li><a href="#!">two<span class="new badge red">1</span></a></li>
+  <li class="divider"></li>
+  <li><a href="#!">three</a></li>
+</ul>
+
+
+<!-- Navbar goes here -->
+<div class="navbar-fixed">
+  <nav>
+    <div class="nav-wrapper teal lighten-2">
+      <a href="#!" class="brand-logo"><i class="material-icons">settings_applications</i>AdminPanel</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a class="dropdown-button" href="#!" data-activates="dropdown3"><i class="small material-icons left">settings</i></a></li>
+        <li><a class="dropdown-button waves-effect waves-light" href="#!" data-activates="dropdown2"><i class="small material-icons left">notifications</i><span class="new badge red">3</span></a></li>
+        <li><a class="dropdown-button" href="#!" data-activates="dropdown1"><i class="small material-icons left">comment</i><span class="new badge red">4</span></a></li>
+
+      </ul>
+    </div>
+  </nav>
+</div>
+<!-- Page Layout here -->
+<div class="row">
+
+  <div class="col s3">
+    <ul class="side-nav fixed">
+      <li><div class="userView">
+        <div class="row">
+          <div class="background">
+            <img src="http://materializecss.com/images/office.jpg">
+          </div>
+          <div class="col s3"><img class="circle" src="http://materializecss.com/images/yuna.jpg"></div>
+          <div class="col s1"></div>
+          <div class="col s8"><span class="white-text name">Gabri Doga</span><span class="white-text email">Administrator</span></div>
+        </div>
+      </div></li>
+      <li><a href=<%=admin_activity_path %>><i class="material-icons">trending_up</i>Dash Board</a></li>
+      <li><a href=<%=admin_userlist_path %>><i class="material-icons">account_box</i>User Management</a></li>
+      <li><div class="divider"></div></li>
+      <li><a class="subheader"><i class="material-icons">settings</i>Site Management</a></li>
+      <li><a class="waves-effect" href=<%=admin_home_path %> ><i class="material-icons">home</i>HOME</a></li>
+      <li><a class="waves-effect" href=<%=admin_service_path%> ><i class="material-icons">shopping_cart</i>SERVICE</a></li>
+      <li><a class="waves-effect" href=<%=admin_aboutus_path %> ><i class="material-icons">subtitles</i>ABOUT US</a></li>
+      <li><a class="waves-effect" href=<%=admin_portfolio_path %>><i class="material-icons">apps</i>PORTFOLIO</a></li>
+      <li><a class="waves-effect" href=<%=admin_team_path %>><i class="material-icons">people</i>TEAM</a></li>
+      <li><a class="waves-effect" href=<%=admin_contact_path %>><i class="material-icons">contact_mail</i>CONTACT</a></li>
+      <li class="no-padding">
+        <ul class="collapsible collapsible-accordion">
+          <li>
+            <a class="collapsible-header"><i class="material-icons">expand_more</i>BLOG</a>
+            <div class="collapsible-body">
+              <ul>
+                <li><a href=<%=admin_blogrubyonrails_path %>><i class="material-icons">language</i>Ruby on Rails</a></li>
+                <li><a href=<%=admin_blogandroid_path %>><i class="material-icons">phone_android</i>Android</a></li>
+                <li><a href=<%=admin_blogios_path %>><i class="material-icons">phone_iphone</i>IOS</a></li>
+                <li><a href=<%=admin_blogwebdisign_path %>><i class="material-icons">desktop_mac</i>Web Design</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </li>
+
+
+
+
+    </ul>
+  </div>
+
+  <div class="col s9">
+    <div class="container">

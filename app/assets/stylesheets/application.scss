@@ -14,22 +14,55 @@
  *= require_self
  */
 @import "materialize";
-
-//nav .nav-wrapper{
-//
-//  //height: 65px;
-//
+//container settings
+//.container{
+//  margin-top: 30px;
 //}
-//nav {
-//
-//  height: 50px;
-//
-//}
-//nav .hide-on-med-and-down{
-//
-//  height: 40px;
-//
-//}
+//side nav bar
 .navbar-fixed{
   z-index: 2000;
 }
+.side-nav .userView{
+  margin-top: 50px;
+  padding: 40px 0px 0px 20px;
+  height: 140px;
+}
+#dropdown3{
+  margin: 0;
+  display: none;
+  min-width: 130px;
+  max-height: 450px;
+  //overflow-y: auto;
+  //opacity: 0;
+  //position: absolute;
+  //z-index: 999;
+  //will-change: width, height;
+
+}
+.brand-logo{
+  padding-left: 30px !important;
+}
+.circle{
+
+  padding: 5px 5px 5px 5px !important;
+
+}
+
+// login panel
+#login {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px !important;
+  margin-bottom: 20px;
+
+
+}
+
+//register panel
+.register-panel{
+  padding-top: 20px !important;
+}
+
+
+
+

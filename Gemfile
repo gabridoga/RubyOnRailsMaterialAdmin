@@ -33,8 +33,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # gem 'capistrano-rails', group: :development
 # my custome gem
 gem 'devise'
-gem 'materialize-sass'
+# gem 'materialize-sass'
 gem 'jquery-turbolinks'
+gem 'chart-js-rails'
 
 
 group :development, :test do

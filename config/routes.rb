@@ -22,9 +22,14 @@ Rails.application.routes.draw do
   get 'admin/blogwebdisign'
 
   get 'admin/activity'
+
   get 'admin/userlist'
 
+  get 'admin/lock'
+
   get 'home/index'
+
+  get 'admin/register'
 
   devise_for :users
   root 'admin#index'
